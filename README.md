@@ -81,27 +81,13 @@ The application will be available at `http://localhost:5173`
 
 ## 🌐 Deployment
 
-The application is deployed and accessible at: [Quiz Platform](https://quiz-platform.vercel.app)
+The application is deployed and accessible at: [Quiz Platform](https://auiz-app-3qoc.vercel.app/)
 
 ### Deployment Status
 
 
 
-## 🔍 Known Issues & Limitations
 
-- Authentication is required to save quiz attempts
-- No offline support currently available
-- Mobile network transitions may affect timer accuracy
-
-## 🎯 Future Improvements
-
-- [ ] Add different quiz categories
-- [ ] Implement difficulty levels
-- [ ] Add social sharing features
-- [ ] Support for image-based questions
-- [ ] Leaderboard functionality
-- [ ] Quiz creation interface
-- [ ] PWA support for offline access
 
 ## 🤝 Contributing
 

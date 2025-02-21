@@ -1,9 +1,9 @@
 import { create } from 'zustand';
-import { QuizState, Question } from '../types/quiz';
+import { QuizState, Questions } from '../types/quiz';
 import { saveQuizAttempt } from '../lib/db';
 
 interface QuizStore extends QuizState {
-  initializeQuiz: (questions: Question[]) => void;
+  initializeQuiz: (questions: Questions[]) => void;
   answerQuestion: (questionId: string, answer: string) => void;
   updateTimer: () => void;
   completeQuiz: () => Promise<void>;
@@ -59,7 +59,7 @@ export const useQuizStore = create<QuizStore>((set, get) => {
             const { questions, answers } = get();
             let score = 0;
 
-            questions.forEach((question: Question) => {
+            questions.forEach((question: Questions) => {
                 if (answers[question.id] === question.correctAnswer) {
                     score += question.points;
                 }

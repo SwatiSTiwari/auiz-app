@@ -46,7 +46,7 @@ const questions = [
   {
     id: '5',
     text: 'Which of these processes is not typically involved in refining petroleum?',
-    type: 'multiple-choice',
+    type: 'multiple-choice' as const,
     options: ['Fractional distillation', 'Cracking', 'Polymerization', 'Filtration'],
     correctAnswer: 'Filtration',
     points: 10,
@@ -87,7 +87,7 @@ const questions = [
   {
     id: '10',
     text: 'If a car travels at 60 mph for 2 hours, how many miles does it travel?',
-    type: 'integer',
+    type: 'integer' as const,
     correctAnswer: '120',
     points: 10,
     timeLimit: 30,

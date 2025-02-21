@@ -1,4 +1,4 @@
-export interface Question {
+export interface Questions {
     id: string;
     text: string;
     type: 'multiple-choice' | 'integer';
@@ -20,7 +20,7 @@ export interface Question {
   
   export interface QuizState {
     currentQuestionIndex: number;
-    questions: Question[];
+    questions: Questions[];
     answers: Record<string, string>;
     timeRemaining: number;
     isComplete: boolean;
